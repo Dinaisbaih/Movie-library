@@ -1,10 +1,17 @@
 import MovieList from "./components/MovieList";
+import Watched from "./components/Watched";
+import { MainDiv, SubDiv } from "./styles";
 
 function App() {
   return (
-    <div>
-      <MovieList />
-    </div>
+    <MainDiv>
+      <SubDiv>
+        <MovieList />
+      </SubDiv>
+      <SubDiv>
+        <Watched />
+      </SubDiv>
+    </MainDiv>
   );
 }
 
